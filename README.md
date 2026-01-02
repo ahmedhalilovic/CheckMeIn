@@ -34,17 +34,4 @@ Important Info.plist entries
 - Privacy - NFC Scan Usage Description (for NFC)
 - URL Types: Add an item with the reversed client id for Google Sign-In.
 
-Notes
-- Firestore offline persistence is enabled by default in the sample code.
-- Selfies (photos) are stored in Firebase Storage; documents in Firestore contain download URLs.
-- For secure QR/NFC tokens, generate signed nonces on the server and verify server-side before accepting check-ins (not shown here).
-
-Cloud Function (optional)
-- Example Node.js Cloud Function included to append shift rows to Google Sheets via a service account.
-- Create a service account with Sheets API enabled and give it access to the target sheet.
-
-What's next
-- Wire UI views (SignInView, CheckInView) to SessionStore and FirestoreAttendanceService.
-- Test QR scanning and NFC on device.
-- Create Cloud Function service account and test export.
 ```
